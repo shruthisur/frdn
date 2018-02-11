@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src=".\lib\ejs.js" charset="utf-8"></script>
+<script src=".\lib\lingapp.js" charset="utf-8"></script>
+<script src=".\lib\jquery-1.7.2.js"></script>
+<script src=".\app\settings.js"></script>
+<link rel="stylesheet" type="text/css" href="./lib/mp3-player-button.css" />
+<script type="text/javascript" src="./lib/soundmanager2.js"></script>
+<script type="text/javascript" src="./lib/mp3-player-button.js"></script>
+<link rel="stylesheet" type="text/css" href=".\lib\exp.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+<!--  Init Ling App   --->
+var app = new LingApp(1);
+app.init();
+app.loadResource("data.txt");
+app.debug();
+function showResults()
+{
+    alert("Thanks for taking the tests  ...");
+	app.display_results();
+	return false;
+	var res = { trial:
+				[{selection:"false" },
+				 {selection:"false" }
+				],
+				block:
+				[ {ans:"audio1"},
+				  {ans:"audio1"}
+				 ] 
+			  };
+
+	if(document.getElementById("trial0true").checked){
+		res.trial[0].selection = "true";
+	}
+	if(document.getElementById("trial1true").checked){
+		res.trial[0].selection = "true";
+	}
+	if(document.getElementById("block0a2").checked){
+		res.block[0].ans = "audio2";
+	}
+	if(document.getElementById("block1a2").checked){
+		res.block[1].ans = "audio2";
+	}
+
+	alert("T1 :"+ res.trial[0].selection+ "T2:" +res.trial[1].selection +
+	"Q1 :"+ res.block[0].ans+ "Q2:" +res.block[1].ans);
+	return false;
+}
+soundManager.setup({
+  // required: path to directory containing SM2 SWF files
+  url: './lib/swf/'
+});
+// 
+function myAudioselection(qid,selection)
+{
+	alert(qid + "...."+selection );
+	app.set_audioselected(qid,selection);
+}
+function myFunction(qid)
+{
+
+var id = myFunction.caller.arguments[0].target.id;
+alert(qid);
+var x = document.getElementById(id).value;
+if(parseInt(x) >2) {
+	alert("Sorry, you are allowed to play only twice.");
+	document.getElementById(id).disabled = true;
+	return
+}
+alert(id + "---:"+ x );
+var mySound = soundManager.createSound({
+ url: './resources/sounds/'+id
+});
+mySound.play();
+document.getElementById(id).value=parseInt(x)+1;
+}
+</script>
+
+  <style>
+ Hide all steps by default: 
+.tab {
+  display: none;
+}
+</style>
+
+</head>
+
+
+<body>
+<form id="regForm" action=""   >
+<script type="text/javascript">
+	data  = { title:"rutest"}
+	
+	var html = new EJS({url:'ind.ejs'}).render();
+	document.write(html);
+
+    
+	
+</script>
+
+</form>
+<script type="text/javascript" src=".\lib\nav.js"></script>  
+</body>
+</html>
+
+
+</body>
+</html>

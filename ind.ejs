@@ -1,0 +1,65 @@
+<h1><%= APP.title    %></h1>
+<div class='tab'> Welcome    
+         <p>Welcome to Language Test ... This will ask a series of 28 questions .... </p>	
+		
+</div>
+<% for(var i=0; i<APP.trial.length; i++) { %>
+        <div class='tab'>TRIAL <%= i+1 %>   
+         <p>Context: <%= APP.trial[i].context %> </p>	
+		 <p>Target: <%= APP.trial[i].target %> </p>	
+         <p>Verification: <%= APP.trial[i].verification %> </p>	
+		  <input type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"true" %>' > True </input>
+          <input type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"false" %>' value="false"> False</input>       
+           
+        </div>
+		
+<% } %>
+
+
+<% for(var i=0; i<APP.trial_screen.length; i++) { %>
+        <div class='tab'><%= APP.trial_screen[i].name %>   
+		<% for(var j=0; j <APP.trial_screen[i].inputs.length; j++) { %>
+           
+			<p><input placeholder='<%= APP.trial_screen[i].inputs[j] %>' oninput="this.className = ''"></p>
+                
+        <% } %>   
+        </div>
+		
+<% } %>
+
+<% for(var i=0; i< LING_CFG.blocks_count; i++) { 
+	
+	for(var j=0; j< LING_CFG.items_inblock; j++) {	
+    var qid = LING_CFG.blocks[i][j];
+	console.log("I :"+i  + "..J:"+ j + "..QID:"+ qid);
+	
+%>
+        <div class='tab' ><%name="blocks_"+qid %>   	
+		<p>Block:<%= i+1 +"/"+ j+1 + "("+ qid + ")" %> </p>			
+		<p>Context: <%= LING_CFG.questions[qid][3] %> </p>	
+		 <p>Target: <%= LING_CFG.questions[qid][4] %> </p>	
+         <p>Verification: <%= LING_CFG.questions[qid][4] %> </p>	
+         <button id='<%= LING_CFG.questions[qid][1] %>' type="button"  value="1" onclick="myFunction(<%=qid%>)"  > Audio1.. </button>       
+        <button id='<%= LING_CFG.questions[qid][2] %>' type="button"  value="1" onclick="myFunction(<%=qid%>)"  > Audio2.. </button>  
+		<input type="radio" name='<%="block"+qid %>' id='<%="block"+qid+"a1" %>' onclick="myAudioselection(<%=qid +","+ 1%>)" > Audio1 </input>
+        <input type="radio" name='<%="block"+qid %>' id='<%="block"+qid+"a2" %>' onclick="myAudioselection(<%=qid +","+2%>)" > Audio2 </input>      
+        </div>
+		
+<%} } %>
+
+<div style="overflow:auto;">
+  <div style="float:right;">
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+  </div>
+</div>
+
+<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+<%  
+    var scrcnt = APP.trial.length+1+ (LING_CFG.blocks.length*LING_CFG.items_inblock);
+	for(var i=0; i<scrcnt; i++) { %>
+  <span class="step"></span>
+<% } %>  
+
+</div>		  
