@@ -1,0 +1,31 @@
+no,audio1,audoi2,context,target,verification,
+1,109_01.wav,109_09.wav,Ce restaurant est trop nul!,personne n'aime rien,Tout le monde aime quelque chose ici.
+2,109_02.wav,109_10.wav,Dans notre famille on est tous allergique à l'alcool :,personne ne boit rien dans les soirées.,Ils ne boivent pas d’alcool.
+3,110_03.wav,110_11.wav,Tous les profs s’ennuient en conseil de classe :,personne ne dit rien pendant les réunions.,Ils restent tous silencieux.
+4,101_04.wav,101_12.wav,Ici au mois d'août, Il fait vraiment trop chaud pour travailler :,personne ne fait rien,Ils ont tous trop chaud pour faire quelque chose.
+5,109_05.wav,109_13.wav, Les profs se plaignent tous que les élèves ne travaillent pas pendant les cours d’été,Personne ne lit rien, Les élèves lisent tous quelque chose.
+6,101_06.wav,101_14.wav, Pendant le ramadan, on doit jeuner toute la journée., personne ne mange rien, Les gens ne mangent pas ici.
+7,115_08.wav,115_16.wav, On vient de couper l’électricité et il fait tout noir ici :, personne ne voit rien, Ils voient tous quelque chose.
+8,109_01.wav,109_09.wav, Ce restaurant est genial!Tout est vraiment trop bon!, personne n'aime rien, Ils  aiment tous quelque chose.
+9,109_02.wav,109_10.wav, Chez les jeunes, la consommation d’alcool est effrayante :  , personne ne boit rien dans les soirées., Ils ne boivent pas d’alcool.
+10,110_03.wav,110_11.wav, Chez nous, les profs veulent tous donner leur avis : , personne ne dit rien pendant les réunions.,Ils disent tous quelque chose.
+11,126_04.wav,126_12.wav, Les gars, Il faut absolument finir le jardinarge avant le week end!, personne ne fait rien, Ils ne font pas de travail.
+12,109_05.wav,109_13.wav, Dans cette école d'élite, absolument tous les élèves font leurs devoirs, même en été:, Personne ne lit rien, Les élèves lisent tous quelque chose.
+13,121_06.wav,121_14.wav, Dans cette clinique, même quand on fait un régime d'un mois, on doit se nourrir un peu :, personne ne mange rien, Ils ne mangent pas pendant un mois.
+14,121_08.wav,121_16.wav, La science dit que même les aveugles ont une vision inconsciente dans une pièce noire :, personne ne voit rien, Tout le monde voit quelque chose.
+15,109_01.wav,109_09.wav,Ce restaurant est trop nul!,personne n'aime rien,Tout le monde aime quelque chose ici.
+16,109_02.wav,109_10.wav,Dans notre famille on est tous allergique à l'alcool :,personne ne boit rien dans les soirées.,Ils ne boivent pas d’alcool.
+17,110_03.wav,110_11.wav,Tous les profs s’ennuient en conseil de classe :,personne ne dit rien pendant les réunions.,Ils restent tous silencieux.
+18,101_04.wav,101_12.wav,Ici au mois d'août, Il fait vraiment trop chaud pour travailler :,personne ne fait rien,Ils ont tous trop chaud pour faire quelque chose.
+19,109_05.wav,109_13.wav, Les profs se plaignent tous que les élèves ne travaillent pas pendant les cours d’été,Personne ne lit rien, Les élèves lisent tous quelque chose.
+20,101_06.wav,101_14.wav, Pendant le ramadan, on doit jeuner toute la journée., personne ne mange rien, Les gens ne mangent pas ici.
+21,115_08.wav,115_16.wav, On vient de couper l’électricité et il fait tout noir ici :, personne ne voit rien, Ils voient tous quelque chose.
+22,109_01.wav,109_09.wav, Ce restaurant est genial!Tout est vraiment trop bon!, personne n'aime rien, Ils  aiment tous quelque chose.
+23,109_02.wav,109_10.wav, Chez les jeunes, la consommation d’alcool est effrayante :  , personne ne boit rien dans les soirées., Ils ne boivent pas d’alcool.
+24,110_03.wav,110_11.wav, Chez nous, les profs veulent tous donner leur avis : , personne ne dit rien pendant les réunions.,Ils disent tous quelque chose.
+25,126_04.wav,126_12.wav, Les gars, Il faut absolument finir le jardinarge avant le week end!, personne ne fait rien, Ils ne font pas de travail.
+26,109_05.wav,109_13.wav, Dans cette école d'élite, absolument tous les élèves font leurs devoirs, même en été:, Personne ne lit rien, Les élèves lisent tous quelque chose.
+27,121_06.wav,121_14.wav, Dans cette clinique, même quand on fait un régime d'un mois, on doit se nourrir un peu :, personne ne mange rien, Ils ne mangent pas pendant un mois.
+28,121_08.wav,121_16.wav, La science dit que même les aveugles ont une vision inconsciente dans une pièce noire :, personne ne voit rien, Tout le monde voit quelque chose.
+29,121_08.wav,121_16.wav, La science dit que même les aveugles ont une vision inconsciente dans une pièce noire :, personne ne voit rien, Tout le monde voit quelque chose.
+30,121_08.wav,121_16.wav, La science dit que même les aveugles ont une vision inconsciente dans une pièce noire :, personne ne voit rien, Tout le monde voit quelque chose.
