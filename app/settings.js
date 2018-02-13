@@ -1,4 +1,4 @@
- var APP  = { title:"RU VOICE TEST",
+ var APP  = { title:"French Double Negation",
 		  trial_screen:[],          	
           trial_screen2:
           [		
