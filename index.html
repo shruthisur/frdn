@@ -3,7 +3,9 @@
 <meta charset="utf-8"/>
 <script src=".\lib\ejs.js" charset="utf-8"></script>
 <script src=".\lib\lingapp.js" charset="utf-8"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src=".\lib\jquery-1.7.2.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src=".\app\settings.js"></script>
 <link rel="stylesheet" type="text/css" href="./lib/mp3-player-button.css" />
 <script type="text/javascript" src="./lib/soundmanager2.js"></script>
@@ -76,6 +78,13 @@ var mySound = soundManager.createSound({
 mySound.play();
 document.getElementById(id).value=parseInt(x)+1;
 }
+
+  $( function() {
+    $( ".accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+
 </script>
 
   <style>

@@ -29,17 +29,27 @@ Quand vous aurez fini, merci de remplir un bref questionnaire démographique. Cl
 <h2>Terms and Condition </h2>    
          <p>....</p>	
   <label for="terms">Accept terms and condition</label>	 <input type="checkbox" id="terms" name="terms" value="yes">
-   	
+   
 </div>
 <!-- Trial Screen --->
 <% for(var i=0; i<APP.trial.length; i++) { %>
         <div class='tab'>TRIAL <%= i+1 %>   
-         <p>Context: <%= APP.trial[i].context %> </p>	
+		<div class="accordion">
+		<h3>Step1 </h3>
+		 <div>
+		 <p>Context: <%= APP.trial[i].context %> </p>	
 		 <p>Target: <%= APP.trial[i].target %> </p>	
-         <p>Verification: <%= APP.trial[i].verification %> </p>	
-		  <input type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"true" %>' > True </input>
-          <input type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"false" %>' value="false"> False</input>       
-           
+		 </div>
+		 <h3>Verification </h3>
+		 <div>
+		 <p>Context: <%= APP.trial[i].context %> </p>	
+		 <p>Target: <%= APP.trial[i].target %> </p>	
+		  <p>Verification: <%= APP.trial[i].verification %> </p>	
+		  <input align="middle" type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"true" %>' > True </input>
+          <input align="middle" type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"false" %>' value="false"> False</input>                  
+		 </div>
+        </div> 
+        
         </div>
 		
 <% } %>
