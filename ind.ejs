@@ -1,9 +1,37 @@
 <h1><%= APP.title    %></h1>
-<div class='tab'> Welcome    
-         <p>Welcome to Language Test ... This will ask a series of 28 questions .... </p>	
+<div class='tab'> 
+<h2>Welcome </h2>   
+ <p>Welcome! Thank you for participating in this study. Today you are going to be taking a French perception study. There will be a series of sixty sentences. You will have to decide what the sentence means based on the context which will take approximately sixty minutes to complete.</p>	
 		
 </div>
-<!-- Trial Screen --- >
+<div class='tab'> 
+<h2>Introduction </h2>    
+<p>nstructions pour l’experience
+<br></br>
+Cette expérience vous presente 56 questions. Pour chacune de ces questions, vous avez 3 tâches à faire.
+<br></br>
+EN PREMIER, vous devez évaluer une phrase dans son contexte. Lisez le contexte et la phrase et décidez si elle est VRAIE ou FAUSSE en cliquant sur les boutons pertinents.
+Cliquez SUIVANT pour continuer
+<br></br>
+EN SECOND, relisez le contexte. Écoutez deux enregistrements de la phrase en pressant sur les boutons-audios. Choisissez l’enregistrement qui vous parait le plus naturel en pressant soit 1 soit 2. Vous pouvez réécouter les enregistrements une fois si nécessaire. 
+Cliquez SUIVANT pour continuer
+<br></br>
+EN TROISIÈME, évaluez la confiance que vous avez dans votre choix sur une échelle de 1 à 5 oú 1 = pas confiant du tout et 5 = très confiant
+Cliquez SUIVANT pour passer à la question suivante
+<br></br>
+Vous aurez quatre essais pour vous entraîner 
+<br></br>
+Quand vous aurez fini, merci de remplir un bref questionnaire démographique. Cliquez SUIVANT pour finir l'expérience.
+</p>	
+
+</div>
+<div class='tab'> 
+<h2>Terms and Condition </h2>    
+         <p>....</p>	
+  <label for="terms">Accept terms and condition</label>	 <input type="checkbox" id="terms" name="terms" value="yes">
+   	
+</div>
+<!-- Trial Screen --->
 <% for(var i=0; i<APP.trial.length; i++) { %>
         <div class='tab'>TRIAL <%= i+1 %>   
          <p>Context: <%= APP.trial[i].context %> </p>	
