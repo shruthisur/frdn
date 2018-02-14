@@ -30,7 +30,7 @@ function showResults()
 				block:
 				[ {ans:"audio1"},
 				  {ans:"audio1"}
-				 ] 
+				 ]
 			  };
 
 	if(document.getElementById("trial0true").checked){
@@ -54,7 +54,7 @@ soundManager.setup({
   // required: path to directory containing SM2 SWF files
   url: './lib/swf/'
 });
-// 
+//
 function myAudioselection(qid,selection)
 {
 	alert(qid + "...."+selection );
@@ -86,7 +86,7 @@ document.getElementById(id).value=parseInt(x)+1;
 	$( ".slider-range-max" ).slider({
       range: "max",
       min: 1,
-      max: 10,
+      max: 5,
       value: 1,
       slide: function( event, ui ) {
         $( ".confident_class" ).val( ui.value );
@@ -99,7 +99,7 @@ document.getElementById(id).value=parseInt(x)+1;
 </script>
 
   <style>
- Hide all steps by default: 
+ Hide all steps by default:
 .tab {
   display: none;
 }
@@ -112,16 +112,16 @@ document.getElementById(id).value=parseInt(x)+1;
 <form id="regForm" action=""   >
 <script type="text/javascript">
 	data  = { title:"rutest"}
-	
+
 	var html = new EJS({url:'ind.ejs'}).render();
 	document.write(html);
 
-    
-	
+
+
 </script>
 
 </form>
-<script type="text/javascript" src=".\lib\nav.js"></script>  
+<script type="text/javascript" src=".\lib\nav.js"></script>
 </body>
 </html>
 
