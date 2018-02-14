@@ -88,10 +88,17 @@ Quand vous aurez fini, merci de remplir un bref questionnaire démographique. Cl
 		<p><%= LING_CFG.questions[qid][3] %> </p>
 		 <p><%= LING_CFG.questions[qid][4] %> </p>
 		</div>
-		<h3>Verification</h3>
-	    <div>
-         <p>Verification: <%= LING_CFG.questions[qid][4] %> </p>
+		<h3>Verification <%= LING_CFG.questions[qid][4] %> </h3>
+	 
+		 <div>
+		 <p><%= LING_CFG.questions[qid][3] %> </p>
+		 <p><%= LING_CFG.questions[qid][4] %> </p>
+		  <p>Verification:  </p>
+		  <input align="middle" type="radio" name='<%="block"+qid+"v1" %>' id='<%="block"+qid+"true" %>' > True </input>
+          <input align="middle" type="radio" name='<%="block"+qid+"v2" %>' id='<%="block"+qid+"false" %>' value="false"> False</input>
 		 </div>
+		 
+		 
 		<h3>Audio Test</h3>
 		<div>
          <button id='<%= LING_CFG.questions[qid][1] %>' type="button"  value="1" onclick="myFunction(<%=qid%>)"  > Audio1.. </button>
