@@ -83,6 +83,17 @@ document.getElementById(id).value=parseInt(x)+1;
     $( ".accordion" ).accordion({
       heightStyle: "content"
     });
+	$( ".slider-range-max" ).slider({
+      range: "max",
+      min: 1,
+      max: 10,
+      value: 1,
+      slide: function( event, ui ) {
+        $( ".confident_class" ).val( ui.value );
+      }
+    });
+//	x = document.getElementsByClassName("tab");
+//    $( "#amount" ).val( $( ".slider-range-max" ).slider( "value" ) );
   } );
 
 </script>

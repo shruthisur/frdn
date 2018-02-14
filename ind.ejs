@@ -73,16 +73,35 @@ Quand vous aurez fini, merci de remplir un bref questionnaire démographique. Cl
 	console.log("I :"+i  + "..J:"+ j + "..QID:"+ qid);
 	
 %>
-        <div class='tab' ><%name="blocks_"+qid %>   	
-		<p>Block:<%= i+1 +"/"+ j+1 + "("+ qid + ")" %> </p>			
+		
+        <div class='tab' ><%name="blocks_"+qid %>  
+		<div class="accordion">
+		<h3>Block:<%= i+1 +"/"+ j+1 + "("+ qid + ")" %> </h3>		
+	    <div>			
 		<p>Context: <%= LING_CFG.questions[qid][3] %> </p>	
 		 <p>Target: <%= LING_CFG.questions[qid][4] %> </p>	
+		</div> 
+		<h3>Verification</h3>		
+	    <div>			
          <p>Verification: <%= LING_CFG.questions[qid][4] %> </p>	
+		 </div>
+		<h3>Audio Test</h3> 
+		<div>
          <button id='<%= LING_CFG.questions[qid][1] %>' type="button"  value="1" onclick="myFunction(<%=qid%>)"  > Audio1.. </button>       
         <button id='<%= LING_CFG.questions[qid][2] %>' type="button"  value="1" onclick="myFunction(<%=qid%>)"  > Audio2.. </button>  
 		<input type="radio" name='<%="block"+qid %>' id='<%="block"+qid+"a1" %>' onclick="myAudioselection(<%=qid +","+ 1%>)" > Audio1 </input>
-        <input type="radio" name='<%="block"+qid %>' id='<%="block"+qid+"a2" %>' onclick="myAudioselection(<%=qid +","+2%>)" > Audio2 </input>      
+        <input type="radio" name='<%="block"+qid %>' id='<%="block"+qid+"a2" %>' onclick="myAudioselection(<%=qid +","+2%>)" > Audio2 </input>     
+		</div>	
+		<h3>Confidence Test</h3> 
+		<div>
+		 <p>
+		<label for="confident">Confident Level (0-10):</label>
+		<input class="confident_class" type="text" id='<%="conf"+qid %>' readonly style="border:0; color:#f6931f; font-weight:bold;">
+		</p>
+		<div class="slider-range-max"></div>
+		</div>
         </div>
+		</div>
 		
 <%} } %>
 
