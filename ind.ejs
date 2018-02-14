@@ -48,6 +48,13 @@ Quand vous aurez fini, merci de remplir un bref questionnaire démographique. Cl
 		  <input align="middle" type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"true" %>' > True </input>
           <input align="middle" type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"false" %>' value="false"> False</input>
 		 </div>
+		 <h3> Audio </h3>
+		 <div>
+		  <button type="button" id='bafe.s_424.wav.mp3'  value="1" onclick="myFunction(<%=i%>)"  > Audio1.. </button>
+          <button type="button" id='bafe_420.wav.mp3'  value="1" onclick="myFunction(<%=i%>)"  > Audio2.. </button>
+		  <input type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"a1" %>' onclick="myAudioselection(<%=i +","+ 1%>)" > Audio1 </input>
+          <input type="radio" name='<%="trial"+i %>' id='<%="trial"+i+"a2" %>' onclick="myAudioselection(<%=i +","+2%>)" > Audio2 </input>
+		 </div>
         </div>
 
         </div>

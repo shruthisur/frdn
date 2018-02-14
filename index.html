@@ -64,14 +64,14 @@ function myFunction(qid)
 {
 
 var id = myFunction.caller.arguments[0].target.id;
-alert(qid);
+//alert(id);
 var x = document.getElementById(id).value;
 if(parseInt(x) >2) {
 	alert("Sorry, you are allowed to play only twice.");
 	document.getElementById(id).disabled = true;
 	return
 }
-alert(id + "---:"+ x );
+//alert(id + "---:"+ x );
 var mySound = soundManager.createSound({
  url: './resources/sounds/'+id
 });
